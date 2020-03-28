@@ -18,10 +18,11 @@ import { AboutComponent } from './about/about.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ProductManagerComponent } from './product-manager/product-manager.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, ProductSlideComponent, ProductAnhComponent, ProductListComponent, ProductEmailComponent, ProductFooterComponent, HomeComponent, NotFoundComponent, ServicesComponent, AboutComponent, ProductDetailComponent, ProductManagerComponent, ProductEditComponent ],
+  imports:      [ BrowserModule, FormsModule,AppRoutingModule , HttpClientModule ],
+  declarations: [ AppComponent, HelloComponent, ProductSlideComponent, ProductAnhComponent, ProductListComponent, ProductEmailComponent, ProductFooterComponent, HomeComponent, NotFoundComponent, ServicesComponent, AboutComponent, ProductDetailComponent, ProductEditComponent, ProductManagerComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

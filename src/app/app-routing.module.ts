@@ -10,13 +10,6 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
-
-
-
-
-
-
-
 const routes: Routes =[
   { path: "", redirectTo: 'home', pathMatch: "full"},
   {path: 'home', component: HomeComponent},
@@ -24,7 +17,7 @@ const routes: Routes =[
   {path: 'service', component: ServicesComponent},
   {path: 'products', component: ProductListComponent},
   {path: 'product/:id', component: ProductDetailComponent},
-  {path: 'product-manager', component: ProductManagerComponent},
+  {path: 'manager', component: ProductManagerComponent},
     { path: 'product/edit/:id', component: ProductEditComponent},
  {path: '**', component: NotFoundComponent}
 
