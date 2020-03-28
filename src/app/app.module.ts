@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { ProductSlideComponent } from './product-slide/product-slide.component';
@@ -13,10 +14,14 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ServicesComponent } from './services/services.component';
 import { ProductService } from './service/product.service';
+import { AboutComponent } from './about/about.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, ProductSlideComponent, ProductAnhComponent, ProductListComponent, ProductEmailComponent, ProductFooterComponent, HomeComponent, NotFoundComponent, ServicesComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductSlideComponent, ProductAnhComponent, ProductListComponent, ProductEmailComponent, ProductFooterComponent, HomeComponent, NotFoundComponent, ServicesComponent, AboutComponent, ProductDetailComponent, ProductManagerComponent, ProductEditComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

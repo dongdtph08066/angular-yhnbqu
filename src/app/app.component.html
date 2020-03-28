@@ -46,6 +46,11 @@
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quản lí<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="products.html">Quản lí sản phẩm </a></li>
+                                        <li><a href="products.html">Thêm sản phẩm</a></li>
+                                        
+                                    </ul>
                                     
                                 </li>
                                 <li><a href="contact.html">Catch</a></li>
@@ -53,7 +58,7 @@
                             </ul>
                             <div class="clearfix"></div>
                         </div>
-                        <!--/.navbar-collapse-->
+                       <!--/.navbar-collapse-->
                         <div class="clearfix"></div>
                     </nav>
                     <!--/.navbar-->   
@@ -66,12 +71,33 @@
         </div>
         <div class="header-end">
             <div class="container">
-
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  
                   <!-- Wrapper for slides -->
                   <app-product-slide></app-product-slide>
-              
+                  
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left car-icn" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right car-icn" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
         </div>
+        
        <app-product-anh></app-product-anh>
-      <app-product-list></app-product-list>
-     <app-product-email></app-product-email>
-        <app-product-footer></app-product-footer>
+        <app-product-list></app-product-list>
+        <app-product-email></app-product-email>
+       <app-product-footer></app-product-footer>
