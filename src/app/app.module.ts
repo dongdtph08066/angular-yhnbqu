@@ -14,15 +14,13 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ServicesComponent } from './services/services.component';
 import { ProductService } from './service/product.service';
-import { AboutComponent } from './about/about.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
 
-import { ProductEditComponent } from './product-edit/product-edit.component';
+
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule , HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, ProductSlideComponent, ProductAnhComponent, ProductListComponent, ProductEmailComponent, ProductFooterComponent, HomeComponent, NotFoundComponent, ServicesComponent, AboutComponent, ProductDetailComponent, ProductEditComponent, ProductManagerComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductSlideComponent, ProductAnhComponent, ProductListComponent, ProductEmailComponent, ProductFooterComponent, HomeComponent, NotFoundComponent, ServicesComponent, ProductManagerComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
