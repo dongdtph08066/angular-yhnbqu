@@ -1,0 +1,13 @@
+/* Add application styles & imports to this file! */
+.nav{
+  display: block;
+  margin-left: 330px;
+  
+}
+.navbar{
+  margin-left: 350px;
+}
+a.subs-btn {
+  margin: -4px 0px 1px;
+}
+
