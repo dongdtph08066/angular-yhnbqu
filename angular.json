@@ -23,10 +23,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
               "src/aaa/css/flexslider.css",
               "src/aaa/css/bootstrap.min.css",
-              "src/aaa/css/style.css",
+              "src/aaa/css/style.scss",
               "src/aaa/css/jquery-ui.css",
               "src/aaa/css/form.css"
             ],
