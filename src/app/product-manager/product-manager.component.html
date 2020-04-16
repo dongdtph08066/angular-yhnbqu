@@ -1,4 +1,20 @@
-<h2>Product Manager</h2>
+<div class="manager">
+  <section>
+    <div class="haaa">
+      <div class="head-bread">
+            <div class="container">
+                 <div class= "haaa14">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Quản lý sản phẩm</li>
+                    
+                </ol>
+                 </div>
+                 
+            </div>
+            
+        </div>
+ 
 <table class="table table-bordered">
 	<thead>
 		<tr>
@@ -17,13 +33,172 @@
       <td>{{product.desc}}</td>
 			<td>
 				
-        <button class="btn btn-danger" routerLink="/add-product">Thêm</button> 
+        <button class="btn btn-danger" routerLink="/add/product">Thêm</button> 
         <button class="btn btn-danger" routerLink="/product/edit/{{product.id}}">Sửa</button>    
 				<button class="btn btn-danger"  (click)="removeItem(product.id)">Xóa</button>
 			</td>
 		</tr>
 	</thead>
 </table>
-<!-- <div class="detail" *ngIf="selected">
-	{{selected.name}}
-</div> -->
+    </div>
+ 
+  <div class="sidebar-menu sticky-sidebar-menu">
+    <div class="logo-icon text-center">
+      <a href="index.html" title="logo"><img src="assets/images/logo.png" alt="logo-icon"> </a>
+    </div>
+  
+    <div class="sidebar-menu-inner">
+
+      <!-- sidebar nav start -->
+      <ul class="nav nav-pills nav-stacked custom-nav">
+        
+        <li class="menu-list">
+          <a routerLink="/add/product">
+            <img src="https://img.icons8.com/cute-clipart/64/000000/add-image.png"/>
+            <span >Thêm sản phẩm </span></a>
+         
+        </li>
+        <li><a routerLink="/manager"><img src="https://img.icons8.com/dusk/64/000000/manager.png"/> <span>Quản lý sản phẩm</span></a></li>
+        
+      </ul>
+      <!-- //sidebar nav end -->
+      <!-- toggle button start -->
+      <a class="toggle-btn">
+        <i class="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
+        <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+      </a>
+      <!-- //toggle button end -->
+    </div>
+  </div>
+
+  <div class="header sticky-header">
+
+    <div class="menu-right">
+      <div class="navbar user-panel-top">
+        <div class="search-box">
+          <form action="#search-results.html" method="get">
+            <input class="search-input" placeholder="Search Here..." type="search" id="search" >
+            <button class="search-submit" value=""><img src="https://img.icons8.com/material-outlined/24/000000/google-web-search.png"/></button>
+          </form>
+        </div>
+        <div class="user-dropdown-details d-flex">
+          <div class="profile_details_left">
+            <ul class="nofitications-dropdown">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img src="https://img.icons8.com/android/24/000000/bell.png"/><span class="badge blue">3</span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="notification_header">
+                      <h3>You have 3 new notifications</h3>
+                    </div>
+                  </li>
+                  <li><a href="#" class="grid">
+                      <div class="user_img"><img src="assets/images/avatar1.jpg" alt=""></div>
+                      <div class="notification_desc">
+                        <p>Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a></li>
+                  <li class="odd"><a href="#" class="grid">
+                      <div class="user_img"><img src="assets/images/avatar2.jpg" alt=""></div>
+                      <div class="notification_desc">
+                        <p>New customer registered </p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a></li>
+                  <li><a href="#" class="grid">
+                      <div class="user_img"><img src="assets/images/avatar3.jpg" alt=""></div>
+                      <div class="notification_desc">
+                        <p>Lorem ipsum dolor sit amet </p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a></li>
+                  <li>
+                    <div class="notification_bottom">
+                      <a href="#all" class="bg-primary">See all notifications</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img src="https://img.icons8.com/officel/24/000000/conference-call.png"/><span class="badge blue">4</span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="notification_header">
+                      <h3>You have 4 new messages</h3>
+                    </div>
+                  </li>
+                  <li><a href="#" class="grid">
+                      <div class="user_img"><img src="assets/images/avatar1.jpg" alt=""></div>
+                      <div class="notification_desc">
+                        <p>Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a></li>
+                  <li class="odd"><a href="#" class="grid">
+                      <div class="user_img"><img src="assets/images/avatar2.jpg" alt=""></div>
+                      <div class="notification_desc">
+                        <p>New customer registered </p>
+                        <span>1 hour ago</span>
+                      </div>
+                    </a></li>
+                  <li><a href="#" class="grid">
+                      <div class="user_img"><img src="assets/images/avatar3.jpg" alt=""></div>
+                      <div class="notification_desc">
+                        <p>Lorem ipsum dolor sit amet </p>
+                        <span>2 hours ago</span>
+                      </div>
+                    </a></li>
+                  <li><a href="#" class="grid">
+                      <div class="user_img"><img src="assets/images/avatar1.jpg" alt=""></div>
+                      <div class="notification_desc">
+                        <p>Johnson purchased template</p>
+                        <span>Just Now</span>
+                      </div>
+                    </a></li>
+                  <li>
+                    <div class="notification_bottom">
+                      <a href="#all" class="bg-primary">See all messages</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="profile_details">
+            <ul>
+              <li class="dropdown profile_details_drop">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
+                  aria-expanded="false">
+                  <div class="profile_img">
+                    <img src="assets/images/profileimg.jpg" class="rounded-circle" alt="" />
+                    <div class="user-active">
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+                <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
+                  <li class="user-info">
+                    <h5 class="user-name">John Deo</h5>
+                    <span class="status ml-2">Available</span>
+                  </li>
+                  <li> <a href="#"><i class="lnr lnr-user"></i>My Profile</a> </li>
+                  <li> <a href="#"><i class="lnr lnr-users"></i>1k Followers</a> </li>
+                  <li> <a href="#"><i class="lnr lnr-cog"></i>Setting</a> </li>
+                  <li> <a href="#"><i class="lnr lnr-heart"></i>100 Likes</a> </li>
+                  <li class="logout"> <a href="#sign-up.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+</section>
+<router-outlet></router-outlet>
+
+</div>

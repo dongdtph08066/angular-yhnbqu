@@ -1,12 +1,27 @@
+
 <div class="manager">
   <section>
-    <div class="haaa">
-      <div class="head-bread">
+        <div class="head-bread">
             <div class="container">
-                 <div class= "haaa14">
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active">Quản lý sản phẩm</li>
+                    <li><a href="register.html">LOGIN</a></li>
+                    <li class="active">Add Product</li>
+                </ol>
+            </div>
+        </div>
+        <!-- reg-form -->
+	<div class="reg-form">
+		<div class="container">
+			<div class="reg">
+        <div class= "haaa1">
+        
+          <div class="head-bread">
+            <div class="container">
+                 <div class= "haaa13">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Thêm sản phẩm</li>
                     
                 </ol>
                  </div>
@@ -14,38 +29,34 @@
             </div>
             
         </div>
- 
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>ID</th>
-			<th>Product Name</th>
-			<th>Price</th>
-      <th>Desc</th>
-			<th>Action</th>
-		</tr>
-	</thead>
-	<thead>
-		<tr *ngFor="let product of products">
-			<td>{{product.id}}</td>
-			<td>{{product.name}}</td>
-			<td>${{product.price}}</td>
-      <td>{{product.desc}}</td>
-			<td>
+          
+          
 				
-        <button class="btn btn-danger" routerLink="/add/product">Thêm</button> 
-        <button class="btn btn-danger" routerLink="/product/edit/{{product.id}}">Sửa</button>    
-				<button class="btn btn-danger"  (click)="removeItem(product.id)">Xóa</button>
-			</td>
-		</tr>
-	</thead>
-</table>
-    </div>
- 
-  <div class="sidebar-menu sticky-sidebar-menu">
-    <div class="logo-icon text-center">
-      <a href="index.html" title="logo"><img src="assets/images/logo.png" alt="logo-icon"> </a>
-    </div>
+			
+				 <form>
+					<ul>
+						<li class="text-info">Name </li>
+						<li><input type="text" placeholder="Enter name" value=""></li>
+					</ul>
+					<ul>
+						<li class="text-info">Price </li>
+						<li><input type="text" placeholder="Enter price" value=""></li>
+					 </ul>				 
+					<ul>
+						<li class="text-info">Desc</li>
+						<li><input type="text" placeholder="Enter desc" value=""></li>
+					</ul>
+							
+					<input type="submit" value="Add Product">
+				
+				</form>
+			</div>
+			</div>
+		</div>
+	</div>
+        <div class="sidebar-menu sticky-sidebar-menu">
+    
+    
   
     <div class="sidebar-menu-inner">
 
@@ -200,5 +211,8 @@
 
 </section>
 <router-outlet></router-outlet>
-
+<footer class="dashboard">
+  <p>&copy 2020 Collective. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank"
+      class="text-primary">W3layouts.</a></p>
+</footer>
 </div>
